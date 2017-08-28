@@ -1,0 +1,52 @@
+.page{
+    background: #f4f4f4;
+}
+.bannerImgBox img,.footerImg img{
+    width: 100%;
+    display: block;
+}
+
+.btnBox{
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0 2.5%;
+}
+
+.btnBox a{
+    width: 100%;
+    display: block;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    text-align: center;
+    background: #00d0ca;
+    color: #fff;
+    font-size: 0.36rem;
+    border-radius: 5px;
+    margin-bottom: 0.2rem;
+}
+
+.btnBox a.other{
+    background: #fff;
+    color: #00d0ca;
+    border:1px solid #00d0ca;
+
+}
+
+.footerImg{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.title{
+    font-size: 0.32rem;
+    color: #333;
+    text-align: center;
+}
+
+.describe{
+    font-size: 0.25rem;
+    color: #888;
+    text-align: center;
+    margin-top: 0.2rem;
+}

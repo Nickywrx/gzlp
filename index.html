@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合约机套包</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="iconfont/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/store.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/store.js"></script>
+</head>
+<body>
+<div class="page">
+    <div class="bannerImgBox">
+        <img src="image/banner.png" class="bannerImg">
+    </div>
+    <div class="introduceBox">
+        <h1>【信用分期购-购机系列 礼包D】Iphone 7</h1>
+        <h2>0首付，0利息，得Iphone7一台+2年通信套餐免费使用（根据所选通信套餐赠送）</h2>
+        <div class="price clearfix">
+            <span>¥6412</span>
+            <s>¥188</s>
+        </div>
+        <ul class="clearfix">
+            <li>快递：免运费</li>
+            <li>已售 500</li>
+            <li>剩余 342天</li>
+            <li>剩余 100</li>
+        </ul>
+    </div>
+    <div class="selectbox" id="selectbox">
+    	<ul>
+    		<!--内存量-->
+    		<li class="phone">
+    			<h4>内存量<span></span></h4>
+    			<ul class="open clearfix">
+    				<li>
+    					<a href="javascript:;">32G</a>
+    				</li>
+    				<li>
+    					<a href="javascript:;">128G</a>
+    				</li>
+    			</ul>
+    		</li>
+    		<!--颜色-->
+    		<li class="phone">
+    			<h4>颜色<span></span></h4>
+    			<ul class="clearfix">
+    				<li>
+    					<a href="javascript:;">金色</a>
+    				</li>
+    				<li>
+    					<a href="javascript:;">红色</a>
+    				</li>
+    				<li>
+    					<a href="javascript:;">玫瑰金</a>
+    				</li>
+    				<li>
+    					<a href="javascript:;">亮黑色</a>
+    				</li>
+    			</ul>
+    		</li>
+    		<!--内存量-->
+    		<li class="phone package">
+    			<h4>套餐选择<span></span></h4>
+    			<ul class="clearfix">
+    				<li>
+    					<a href="javascript:;">
+    						 <div>106元套餐</div>
+			                <div>套餐详情</div>
+			                <div>
+			                    <i></i>
+			                    <em>未选择</em>
+			                </div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:;">
+    						 <div>139元套餐</div>
+			                <div>套餐详情</div>
+			                <div>
+			                    <i></i> 
+			                    <em>未选择</em>
+			                </div>
+    					</a>
+    				</li>
+    			</ul>
+    		</li>
+    		<!--内存量-->
+    		<li class="phone">
+    			<h4>手机号办理<span></span></h4>
+    			<ul class="clearfix">
+    				<li>
+    					<a href="javascript:;" class="selNo">选号</a>
+    				</li>
+    				<li>
+    					<h4 class="showNumber"></h4>
+    				</li>
+    			</ul>
+    		</li>	
+    	</ul>
+    </div>
+    <div class="myLine"></div>
+    <div class="storeTab">
+        <div class="active"><span>商品详情</span></div>
+        <div><span class="center">购买须知</span></div>
+        <div><span>商品评价</span></div>
+    </div>
+    <div class="detailContent">
+        <div class="detailImgBox current">
+            <img src="image/detail.png">
+        </div>
+         <div>
+           <p>2</p>
+        </div>
+         <div>
+           <p>3</p>
+        </div>
+    </div>
+    <div class="buyBox" id="buyBox">
+		<a href="#selectbox" class="turnBack"></a>
+        <div class="shoppingCart"><span>0</span></div>
+        <div class="buyNow">立即购买</div>
+        <div class="addCart">加入购物车</div>
+    </div>
+</div>
+<!--弹出框和遮罩层-->
+	<div class="dialog">
+			<div class="dialog-header">
+				<a href="javascript:;" class="cancle">取消</a>
+				<a href="javascript:;" class="sure">确定</a>
+			</div>
+			<div class="dialog-content">
+				<form>
+					<p>
+						<select class="phone-type">
+							<option value="1" selected="selected">西安联通&nbsp;3G/4G</option>
+							<option value="2">西安联通1&nbsp;3G/4G</option>
+							<option value="3">西安联通2&nbsp;3G/4G</option>
+							<option value="4">西安联通3&nbsp;3G/4G</option>
+						</select>
+						<a href="javascript:;"></a>
+					</p>
+					<p>
+						<input type="text" placeholder="尾号搜索" class="phone-number"/>
+						<a href="javascript:;"></a>
+					</p>
+				</form>
+				<ul class="number-detail clearfix">
+					<li><a href="javascript:;">123456789100</a></li>
+					<li><a href="javascript:;">123456789101</a></li>
+					<li><a href="javascript:;">123456789102</a></li>
+					<li><a href="javascript:;">123456789103</a></li>
+					<li><a href="javascript:;">123456789104</a></li>
+					<li><a href="javascript:;">123456789105</a></li>
+					<li><a href="javascript:;">123456789106</a></li>
+					<li><a href="javascript:;">123456789107</a></li>
+					<li><a href="javascript:;">123456789108</a></li>
+					<li><a href="javascript:;">123456789109</a></li>
+				</ul>
+			</div>
+			<div class="dialog-footer">
+				<a href="javascript:;" class="change">换一批</a>
+			</div>
+		</div>
+		<!--遮罩层-->
+		<div class="mask-layer"></div>
+
+</body>
+</html>
