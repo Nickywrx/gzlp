@@ -64,7 +64,7 @@
 }
 
 .selectbox{
-	padding: 0.4rem 0.4rem;
+	padding: 0rem 0.4rem 0.4rem;
 }
 .selectbox ul li h4{
 	font-size: 0.31rem;
@@ -419,6 +419,9 @@ form p:nth-child(2) a{
 	height: 0.97rem;
 	font-size: 0.3rem;
 	color: #333;
+}
+.number-detail li a span{
+	color: #1ccfc9;
 }
 /*弹出框底部*/
 

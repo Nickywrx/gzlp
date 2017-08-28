@@ -4,8 +4,8 @@ $(function() {
 	var lis = $('.number-detail').find('li');
 	/*点击选号弹出遮罩层*/
 	$('.selNo').on('click', function() {
-		$('.dialog').show();
 		$('.dialog').addClass('animated bounceInDown');
+		$('.dialog').show();
 		$('.mask-layer').show();
 		/*当点击弹窗的时候，如果之前选择过号码，那么该号码就还是会被选中状态*/
 
@@ -139,7 +139,7 @@ $(function() {
 	$('#buyBox .turnBack').on('click',function(){
 		$.toast('请填好购买信息');
 	});
-  /*---------------------------------------------华丽的分割线----------------------------------------------------*/
+ 
   // tab栏切换
   	var storeTab=document.getElementsByClassName('storeTab')[0],
   		storeTabs=storeTab.getElementsByTagName('div');
@@ -155,3 +155,24 @@ $(function() {
   	});
 
 });
+
+ /*---------------------------------------------华丽的分割线----------------------------------------------------*/
+ 	 function e(a,f){
+			 for(var i=0,j=a.length;i<j;i++){
+			  f.call(a[i],i);
+			 }
+			}
+			function s(o){
+			 var a = $('.number-detail a'),
+			  r = new RegExp(o.value,"i");
+			 e(a,function(n){
+			  c = a[n].innerHTML;
+			  if(o.value!="" && r.test(c)){
+			   a[n].innerHTML = "<span>" + c.replace(/<[^>]*>/gi,"") + "</span>";
+			  }else{
+			   a[n].innerHTML = c.replace(/<[^>]*>/gi,"");
+			  }
+			 })
+			}
+ 
+ /*---------------------------------------------华丽的分割线----------------------------------------------------*/
