@@ -82,7 +82,7 @@ $(function() {
           	$this.show();
         }
         if($('.package a').hasClass('active')){
-        	$(this).find('em').text('已选中').css('color','#fff');
+        	$(this).find('em').text('已选择').css('color','#fff');
         	$(this).parent().siblings('li').find('em').text('未选择').css('color','#888888');
         }
   		  

@@ -14,7 +14,7 @@
 }
 
 .introduceBox h1 {
-	font-size: 0.45rem;
+	font-size: 0.42rem;
 	color: #333;
 	margin: 0.25rem;
 }
@@ -75,7 +75,7 @@
 	position: absolute;
   	right: 0.05rem;
   	top: 0.05rem;
-  	font-size: 0.2rem;
+  	font-size: 0.3rem;
   	color: lightblue;
 }
 /* .selectbox ul ul{
@@ -108,7 +108,7 @@
 	text-align: center;
 	height: 1.06rem;
 	line-height: 1.06rem;
-	font-size: 0.25rem;
+	font-size: 0.3rem;
 	color: #888888;
 }
 .selectbox ul .package a div:nth-child(2){
@@ -122,6 +122,8 @@
 .selectbox ul .package a em{
 	margin-top: 0.4rem;
 	color:#888888;
+	font-style: normal;
+	font-size: 0.26rem;
 }
 .selectbox ul .package a i{
     display: block;
@@ -135,6 +137,7 @@
     top:0;
     right: 0;
     bottom: 0.4rem;
+
 }
 .selectbox ul .package a.active div:last-child i{
     border-color:#d2f5f4;
