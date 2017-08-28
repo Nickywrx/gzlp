@@ -21,7 +21,8 @@ $(function() {
 			if(phoneNum == "") {
 				$('.showNumber').hide();
 			} else {
-				$('.showNumber').show().text("已选择:" + phoneNum);
+				$('.showNumber').show().val(" : " + phoneNum);
+				
 			}
 
 			for(var i = 0; i < lis.length; i++) {
@@ -30,15 +31,20 @@ $(function() {
 					$(lis[i]).attr('flag', 'lightblue');
 				}
 			}
+			
 		}
 		if(e.target.text == "取消") {
 
 			for(var i = 0; i < lis.length; i++) {
 				$(lis[i]).removeClass('selected');
 			}
+			
 		}
+		//无论确定还是取消都要关闭最后一个
+		$('.lastDiv').hide();
+		$('.ssss').text($('.showNumber').val());
 		//判断如果没有选中号码的话，选择号码按钮还是不会变颜色
-			if($('.showNumber').text()==""){
+			if($('.showNumber').val()==""){
 				$('.selNo').removeClass('active');
 			}else{
 				//	将购物车父级元素的下面的a标签消失掉
@@ -60,6 +66,14 @@ $(function() {
 	});
 /*--------------------------------------------华丽的分割线-------------------------------------------------*/
 	/*选择商品属性*/
+	  //如果套餐选择点击了套餐或者详情是不会变颜色并没效果
+        $('.package a').find('div').eq(1).on('click',function(e){
+        	alert('查看详情');
+        	return false;
+        });
+        $('.package a').find('div').eq(0).on('click',function(e){
+        	return false;
+        });
 	 // 最后一个li标签选项的标志
       $('.phone').last().attr('index','last');
   		$('.phone a').on('click',function(){
@@ -73,25 +87,34 @@ $(function() {
         }
         // 点击的时候给a标签一个变化颜色
           $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+        //将选中的a标签内容显示到strong标签里面
+          $this.prev('h4').find('strong').text(" : "+$(this).text());
+          if($this.parent('li').hasClass('package')){
+          	$this.prev('h4').find('strong').text(" : "+$(this).children().eq(0).text());
+          }
         // 点击完就出现编辑文字
         $this.prev().find('span').text("修改");
         // 如果点击的a标签是属于最后一个li标签，就不关闭，并且让按钮显示
         if($this.parent().attr('index')=='last'){
             //最后一个属性选项没有修改文字并且一直打开的状态
-        	$this.prev().find('span').text("");
+        	$this.prev().find('strong').text($('.showNumber').val());
           	$this.show();
         }
         if($('.package a').hasClass('active')){
         	$(this).find('em').text('已选择').css('color','#fff');
         	$(this).parent().siblings('li').find('em').text('未选择').css('color','#888888');
         }
+      
   		  
   		});
       // 点击编辑让ul打开
   		  $('.phone span').on('click',function(){
   			$(this).parent().next().addClass('open');
   		});
-
+  		//最后一个选择是自己可以编辑打开的
+		$('.Edit').on('click',function(){
+			$(this).parent().next().css('display','block');
+		})
 	/*---------------------------------------------华丽的分割线----------------------------------------------------*/
 	/*加入购物车和立即购买*/
 	var buyCount=0;

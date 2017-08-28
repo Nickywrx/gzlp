@@ -71,6 +71,10 @@
 	padding-bottom: 0.25rem;
 	position:relative;
 }
+.selectbox ul li h4 strong{
+	font-size: 0.31rem;
+	font-weight: normal;
+}
 .selectbox ul li h4 span{
 	position: absolute;
   	right: 0.05rem;
@@ -361,9 +365,9 @@ form p:nth-child(2) a{
 	background: url(../image/search.png) no-repeat center center;
 	background-size: 0.32rem 0.32rem;
 }
-.phone-type,
+/*.phone-type,*/
 .phone-number {
-	width: 50%;
+	width: 100%;
 	float: left;
 	height: 0.68rem;
 	font-size: 0.25rem;
@@ -371,18 +375,23 @@ form p:nth-child(2) a{
 	outline: none;
 	padding: 0.11rem 0rem 0.11rem 0.4rem;
 }
+.phone{
+	padding-top: 0.3rem;
+	border-bottom: 1px solid #ddd;
+}
+.phone-type.phone ul li{
+	width: auto;
+	/*float: none;*/
 
-.phone-type {
-	border-radius: 0.05rem 0 0 0.05rem;
-	border-right: none;
-	background: url(../image/drop-down.png) no-repeat 2.55rem center;
-	background-size: 0.32rem 0.32rem;
-	background-color: #fff;
+}
+.phone-type.phone ul li a{
+	text-align: inherit;
+	padding: 0 0.3rem;
 }
 
 .phone-number {
 	border-radius: 0 0.05rem 0.05rem 0;
-	color: #c3c3c3;
+	color: #333;
 }
 
 .phone-type option {
