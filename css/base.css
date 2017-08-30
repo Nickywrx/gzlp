@@ -30,6 +30,8 @@ textarea{
 }
 a{
     text-decoration:none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent
 }
 .fl{
     float: left;
