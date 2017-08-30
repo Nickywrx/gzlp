@@ -145,6 +145,7 @@
 }
 .selectbox ul .package a.active{
 	background-color: #d2f5f4;
+	border: 1px solid #1ccfc9;
 }
 .selectbox ul .package a.active div{
 	color: #111111;
