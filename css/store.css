@@ -80,7 +80,7 @@
   	right: 0.05rem;
   	top: 0.05rem;
   	font-size: 0.3rem;
-  	color: lightblue;
+  	color: #888888;
 }
 /* .selectbox ul ul{
 	overflow: hidden;
@@ -113,7 +113,7 @@
 	height: 1.06rem;
 	line-height: 1.06rem;
 	font-size: 0.3rem;
-	color: #888888;
+	color: #111111;
 }
 .selectbox ul .package a div:nth-child(2){
 	border-right:1px dotted #C1CACA;
@@ -142,6 +142,13 @@
     right: 0;
     bottom: 0.4rem;
 
+}
+.selectbox ul .package a.active{
+	background-color: #d2f5f4;
+}
+.selectbox ul .package a.active div{
+	color: #111111;
+	background-color: #d2f5f4;
 }
 .selectbox ul .package a.active div:last-child i{
     border-color:#d2f5f4;
@@ -414,7 +421,7 @@ form p:nth-child(2) a{
 	width: 50%;
 }
 .number-detail li.selected{
-	background-color: lightblue;
+	background-color: #1ccfc9;
 }
 .number-detail li a {
 	display: block;
