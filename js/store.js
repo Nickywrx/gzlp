@@ -154,7 +154,11 @@ $(function() {
   		$(target).parent().addClass('active').siblings().removeClass('active');
   		$('.detailContent div').eq(index).addClass('current').siblings().removeClass('current');
   	});
-
+ /*---------------------------------------------swiper插件轮播图----------------------------------------------------*/
+ var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
 });
 
  /*---------------------------------------------华丽的分割线----------------------------------------------------*/
