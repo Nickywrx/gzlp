@@ -424,9 +424,9 @@ a{
 }
 
 .storeTab div.active{
-    border-bottom: 2px solid #d7253f;
+    border-bottom: 2px solid #1ccfc9;
 }
 
 .storeTab div.active span{
-    color: #d7253f;
+    color: #1ccfc9;
 }
